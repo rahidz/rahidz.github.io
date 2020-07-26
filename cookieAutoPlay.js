@@ -5,6 +5,6 @@ var xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://api.github.com/repos/rahidz/CookieBot/releases/latest', false);
 xhr.send();
 var response = JSON.parse(xhr.responseText);
-var latest = "https://rahidz.github.io" + response.tag_name + "/cookieAutoPlayBeta.js"
+var latest = "https://rahidz.github.io/cookieAutoPlayBeta.js"
 console.log("### LOADING FROM " + latest); 
 Game.LoadMod(latest);
